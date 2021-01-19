@@ -1,0 +1,108 @@
+*{
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+body,
+#page-header,
+#page-header h1{
+    margin: 0 !important;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#page-header{
+    position: relative;
+    background-color: #008C8C;
+    padding-top: 10px;
+    color: #FFFFFF;
+    height: 120px;
+}
+
+#navigation-bar{
+    position: absolute;
+    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.nav-item{
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px whitesmoke solid;
+}
+
+#page-header,
+#navigation-bar {
+    display: flex;
+}
+
+#page-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent-centered,
+.x-parent-centered{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.parent-centered{
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-item a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+.sign{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.header-sign {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+header{position: relative;}
+.header-sign-up {top: 12px;}
+.header-sign-down {bottom: 12px;}
+
+@media (max-width: 1200px) {
+    h1{font-size:25px;}
+    h1 {width: 265px; height: 29px;}
+    .nav-item{width: 90px; height: 66px;}
+    body, .header-sign{width: 360px;}
+    .header-sign{width: 350px;}
+}
+@media (min-width: 1200px) {
+    h1{font-size:35px;}
+    h1{width: 366px; height: 40px}
+    .nav-item{width: 135px; height: 68px;}
+    body{width: 1200px;}
+    .header-sign{width: 1190px;}
+}
+
+main{
+    color: #333333;
+    margin: 0 10px;
+}
