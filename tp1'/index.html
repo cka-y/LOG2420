@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Frigocommunautaires</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  Font awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Login modal -->
+<div id="login" class="w3-modal" style="display: block;">
+    <div class="w3-modal-content">
+        <div>
+            <!-- Login -->
+            <label for="username">Nom d'utilisateur</label>
+            <br>
+            <input type="text" id="username">
+            <br>
+
+            <!-- Password -->
+            <label for="password">Mot de passe</label>
+            <br>
+            <input type="password" id="password">
+            <br>
+
+            <!-- Buttons -->
+            <button>Connecter</button>
+            <button onclick="document.getElementById('login').style.display='none'">Anuler</button>
+            <br>
+        </div>
+    </div>
+</div>
+
+
+<!-- header should go here -->
+<div id="page-header" class="x-parent-centered">
+    <!--  Title  -->
+    <h1 class="text-center">Frigocommunautaires</h1>
+    <p style="position: absolute; bottom: 0; height: 50px; font-size: 24px;">Espace entretien</p>
+    <!--  Mes frigos container  -->
+    <div id="mes-frigos" class="header-sign header-sign-down">
+        <p class="text-right">
+            <i class="fa sign fa-arrow-right" aria-hidden="true"></i>
+        </p>
+        <div class="text-right">Mes frigos</div>
+    </div>
+
+    <!--  Sign out container  -->
+    <div class="header-sign header-sign-up">
+        <p>
+            <i class="fa sign fa-sign-out" aria-hidden="true" data-source="source/mission.html" style="transform: scaleX(-1)"></i>
+        </p>
+        <div id="member">Public</div>
+    </div>
+</div>
+<main>
+    <div class="w3-row" id="body-section">
+        <div id="news-container" class="w3-col l8">
+            <div class="section-heading">Nouvelles</div>
+        </div>
+        <div id="order-container" class="w3-col l4">
+            <div class="section-heading" style="width: 100%; text-align: center">Commandes du matériel</div>
+            <div id="order-content-container">
+                <div>
+                    <input id="soaps-order" class="order-item" type="number" onchange="updateOrder(this.value, 0)" min="0" value="0">
+                    <span class="inc-dec">
+                        <i class="fa fa-chevron-up" onclick="incQuantity(0, 'soaps-order')"></i>
+                        <i class="fa fa-chevron-down" onclick="decQuantity(0, 'soaps-order')"></i>
+                        Savons
+                    </span>
+                </div>
+                <div>
+                    <input id="rags-order" class="order-item" type="number" onchange="updateOrder(this.value, 1)" min="0" value="0">
+                    <span class="inc-dec">
+                    <i class="fa fa-chevron-up" onclick="incQuantity(1, 'rags-order')"></i>
+                    <i class="fa fa-chevron-down" onclick="decQuantity(1, 'rags-order')"></i>
+                    Guenilles
+                </span>
+                </div>
+                <div>
+                    <input id="air-fresheners-order" class="order-item" type="number" onchange="updateOrder(this.value, 2)" min="0" value="0">
+                    <span class="inc-dec">
+                    <i class="fa fa-chevron-up" onclick="incQuantity(2, 'air-fresheners-order')"></i>
+                    <i class="fa fa-chevron-down" onclick="decQuantity(2, 'air-fresheners-order')"></i>
+                    Désodorisants
+                </span>
+                </div>
+                <div>
+                    <input id="bulbs-order" class="order-item" type="number" onchange="updateOrder(this.value, 3)" min="0" value="0">
+                    <span class="inc-dec">
+                    <i class="fa fa-chevron-up" onclick="incQuantity(3, 'bulbs-order')"></i>
+                    <i class="fa fa-chevron-down" onclick="decQuantity(3, 'bulbs-order')"></i>
+                    Ampoules
+                </span>
+                </div>
+                <div style="transform: translateX(-23%);">
+                    <div>Autres:</div>
+                    <input id="other-items-order" type="text" style="width: 75%;">
+                </div>
+                <button class="w3-btn w3-teal w3-border w3-round-large">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row" id="footer-section">
+        <div id="guides-container" class="w3-col l4">
+            <div class="section-heading">Guides d'entretien</div>
+        </div>
+        <div id="directory-container" class="w3-col l4">
+            <div class="section-heading">Bottin</div>
+        </div>
+        <div id="parteners-container" class="w3-col l4">
+            <div class="section-heading">Compostage et partenaires</div>
+        </div>
+    </div>
+
+</main>
+
+<script src="source.js"></script>
+</body>
+</html>

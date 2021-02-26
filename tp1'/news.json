@@ -1,0 +1,20 @@
+{
+  "news": [
+    {
+      "title": "Nouveau site Web transactionnel",
+      "body": "Après de nombreux mois d’efforts, Frigoscommunautaire.org est ravie d’annoncer le lancement officiel de notre nouveau site Web en ligne. Ce site est entré en service le 1er février 2021 avec une nouvelle interface interactionnelle. Les membres de l’association disposent maintenant de l’avantage supplémentaire de pouvoir en tout temps donner et prendre des repas et aliments dans les différents frigos sur le territoire de Montréal. Avec ce nouveau site, les membres de Frigoscommunautaire.org bénéficient de nouvelles fonctionnalités telles que des frigos numériques affichant différents types d’information sur tous les aliments disponibles tels que le nombre de portions, les allergéniques présents et la date de péremption. Les preneurs pourront réserver des aliments en les ajoutant à leurs paniers électroniques avant de passer aux frigos pour les récupérer. Le nouveau site averti les donateurs qu’utilisent leurs propres contenants lorsqu’ils sont retournés au frigo d’origine dument nettoyés. Le nouveau site aide dans la formation des bénévoles et les supporte dans les différents flux d’information associés aux tâches de nettoyage et entretien des frigos. Ils peuvent tenir le système d’information tout à fait actualisé sur l’état (nettoyé et fonctionnel) des frigos ainsi que sur l’inventaire des aliments disponibles."
+    },
+    {
+      "title": "Nouveaux frigos arrivés",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus"
+    },
+    {
+      "title": "Nouvelle 001",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus"
+    },
+    {
+      "title": "Nouvelle 001",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus"
+    }
+  ]
+}
